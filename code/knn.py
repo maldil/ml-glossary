@@ -1,5 +1,7 @@
 from collections import Counter
 from math import sqrt
+import numpy as np
+
 
 
 def euclidean_distance(point1, point2):
@@ -10,7 +12,7 @@ def euclidean_distance(point1, point2):
 
 
 def mean(labels):
-    return sum(labels) / len(labels)
+    return np.mean(labels)
 
 
 def mode(labels):
